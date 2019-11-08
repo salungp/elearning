@@ -1,0 +1,132 @@
+.auth-wrapper {
+	min-height: 100vh;
+	width: 100%;
+	background: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+.form-wrapper {
+	padding: 30px;
+	border-radius: 5px;
+	background: #fff;
+	box-shadow: 0 4px 10px 2px rgba(0,0,0,.06);
+}
+.username {
+	border-bottom-right-radius: 0px !important;
+	border-bottom-left-radius: 0px !important;
+}
+.password {
+	border-top-right-radius: 0px !important;
+	border-top-left-radius: 0px !important;
+}
+@media (min-width: 520px) {
+	.form-wrapper {
+		width: 320px;
+	}
+}
+@media (max-width: 520px) {
+	.auth-wrapper {
+		padding: 15px;
+	}
+	.form-wrapper {
+		width: 100%;
+	}
+}
+input, button, select {
+	font-size: 16px;
+}
+.after-button {
+	display: flex;
+	margin: 15px 0;
+}
+.after-button hr {
+	display: inline-block;
+	width: 30%;
+	border-bottom: 1px solid rgba(0,0,0,.07);
+}
+/* == video == */
+.video-item {
+	border-radius: 10px;
+	overflow: hidden;
+	display: block;
+	border: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 30px;
+	cursor: pointer;
+	transition: .3s;
+}
+.video-item:hover {
+	box-shadow: 0 4px 13px 3px rgba(0,0,0,.2);
+	text-decoration: none;
+}
+.video-item .thumb img {
+	width: 100%;
+	height: 160px;
+	object-fit: cover;
+}
+.video-description {
+	padding: 15px;
+}
+.date-video {
+	font-size: 13px;
+	color: #888;
+	margin-bottom: 5px;
+}
+.video-item h3 {
+	font-size: 26px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 5px;
+}
+.video-author {
+	color: #888;
+}
+.video-wrapper .video video {
+	width: 100%;
+}
+.video-wrapper .profile {
+	display: flex;
+	align-items: center;
+}
+.video-wrapper .profile-picture {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #666;
+	margin-right: 15px;
+}
+.video-list {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	display: flex;
+	align-items: center;
+}
+.video-list:hover {
+	text-decoration: none;
+	color: #333;
+}
+.video-list .thumbnail img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+}
+.video-list .text {
+	padding: 0 10px;
+}
+.video-list .text small {
+	font-size: 13px !important;
+	color: #888;
+}
+.video-list h3 {
+	font-size: 18px;
+	color: #444;
+}
+.task-item {
+	padding: 15px;
+	border-radius: 6px;
+	border: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 15px;
+	display: block;
+}
